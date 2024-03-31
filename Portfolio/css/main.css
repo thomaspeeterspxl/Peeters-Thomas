@@ -1,0 +1,550 @@
+* {
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.slide1:hover,
+.slide1:focus {
+  box-shadow: inset 5.4em 0 0 0 var(--hover);
+}
+
+.slide2:hover,
+.slide2:focus {
+  box-shadow: inset 8em 0 0 0 var(--hover);
+}
+
+.slide3:hover,
+.slide3:focus {
+  box-shadow: inset 9em 0 0 0 var(--hover);
+}
+
+.slide4:hover,
+.slide4:focus {
+  box-shadow: inset 12.5em 0 0 0 var(--hover);
+}
+
+.slide5:hover,
+.slide5:focus {
+  box-shadow: inset 12em 0 0 0 var(--hover);
+}
+
+.slide6:hover,
+.slide6:focus {
+  box-shadow: inset 15.3em 0 0 0 var(--hover);
+}
+
+.slide7:hover,
+.slide7:focus {
+  box-shadow: inset 14em 0 0 0 var(--hover);
+}
+
+#cvButton {
+  margin-left: 20px;
+}
+
+.slide {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  color: var(--color);
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+  line-height: 1;
+  border-radius: 5px;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+.slide:hover, .slide:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+.slide {
+  --color: #5C9D8B;
+  --hover: #5C9D8B;
+}
+
+nav {
+  height: 106px;
+  background-color: #EBFDF8;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  margin: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  margin: 30px 15px;
+  width: 150px;
+  text-align: center;
+  color: #5C9D8B;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-weight: 800;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.dropdown-menu-item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  margin: 30px 15px;
+  width: 150px;
+  text-align: left;
+  color: #5C9D8B;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.navbar-hidden {
+  opacity: 0.7;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul li a {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  font-size: 1.5rem;
+  color: #545479;
+  align-content: center;
+}
+
+footer ul li a:hover {
+  color: #5C9D8B;
+}
+
+#body_home {
+  background-image: url("../assets/background_home.png");
+  background-position: center;
+  background-size: 100%;
+}
+
+#homepage {
+  margin: 5rem auto 7rem 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#homepage img {
+  width: 450px;
+  height: 300px;
+  margin: 90px 120px 0 0;
+}
+
+#homepage #tekst_homepage {
+  height: 320px;
+  margin: 10px 0 0 0;
+}
+
+#titel_1 {
+  font-family: "Nunito", sans-serif;
+  color: #EBFDF8;
+  font-weight: 700;
+  font-size: 70px;
+}
+
+#titel_2 {
+  width: 800px;
+  font-family: "Nunito", sans-serif;
+  color: #EBFDF8;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+#tekst_homepage button {
+  width: 270px;
+  height: 65px;
+  background: #5C9D8B;
+  border: #5C9D8B solid 1px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#tekst_homepage button a:link {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #5C9D8B;
+  text-decoration: none;
+}
+
+#tekst_homepage button a:visited {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #EBFDF8;
+  text-decoration: none;
+}
+
+#profiel {
+  margin: 5rem auto 8rem 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#over_mij #profiel img {
+  width: 437px;
+  height: 633px;
+  margin: 20px 60px 0 0;
+}
+
+main #profiel #persoonlijke-info {
+  height: 320px;
+  /*margin: 10px 0 0 0;*/
+}
+
+#persoonlijke-info h1 {
+  padding: 0 25px 0 20px;
+  font-size: 40px;
+  color: #545479;
+}
+
+#persoonlijke-info .tekst {
+  padding: 0 25px 0 20px;
+  font-size: x-large;
+}
+
+.creatie {
+  width: 150px;
+  height: 35px;
+  background: #5C9D8B;
+  border: #5C9D8B solid 1px;
+  border-radius: 20px;
+}
+
+#hardskills_title p {
+  margin: 20px 0 0 150px;
+  /*width: 675px;*/
+  font-size: medium;
+}
+
+.hard_skills {
+  margin: 3rem auto 5rem 150px;
+  display: flex;
+}
+
+.hard_skills .boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hard_skills .boxes .code {
+  width: 107px;
+  height: 107px;
+  margin: 17px;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 145px;
+  height: 145px;
+  perspective: 1000px;
+  margin: 25px 25px 25px 0;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/*.flip-box:hover .flip-box-inner {*/
+/*    transform: rotateX(180deg);*/
+/*}*/
+.flip-box-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50px;
+  border: #545479 solid 2px;
+}
+
+.flip-box-front {
+  background-color: #EBFDF8;
+  color: black;
+}
+
+/*.flip-box-back {*/
+/*  background-color: #545479;*/
+/*  color: white;*/
+/*  transform: rotateX(180deg);*/
+/*  margin: 0 auto;*/
+/*}*/
+.vakken {
+  margin-right: 150px;
+}
+
+#main-wpl1 {
+  height: 75vh;
+}
+
+#txt-wpl {
+  margin: 50px 0 0 75px;
+}
+
+#txt-wpl h1 {
+  font-size: 40px;
+  color: #545479;
+}
+
+#txt-wpl p {
+  font-size: large;
+}
+
+#knoppen-wpl {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 75px auto;
+}
+
+#knoppen-wpl button {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 2rem 2rem 0;
+  background: #5C9D8B;
+  border: #5C9D8B solid 1px;
+}
+
+#knoppen-wpl button a:link {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #EBFDF8;
+  text-decoration: none;
+}
+
+#knoppen-wpl button a:visited {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #EBFDF8;
+  text-decoration: none;
+}
+
+#profiel {
+  margin: 5rem auto 7rem 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#persoonlijke-info {
+  order: 1;
+}
+
+#wpl2-logo {
+  order: 2;
+}
+
+#mijn_deel {
+  margin: 0 auto 7rem 150px;
+}
+
+#wpl2 #profiel #logo {
+  margin: 200px 60px 0 120px;
+}
+
+main #profiel #persoonlijke-info {
+  height: 320px;
+  width: 750px;
+}
+
+#persoonlijke-info h1 {
+  padding: 0 0 0 20px;
+  font-size: 40px;
+  color: #545479;
+}
+
+#mijn_deel h2 {
+  padding: 50px 0 0 10px;
+  font-size: 40px;
+  color: #545479;
+}
+
+#persoonlijke-info p, #mijn_deel p {
+  padding: 0 0 0 20px;
+  font-size: large;
+}
+
+#linken_wpl2 {
+  width: 1000px;
+  margin: 0 auto 5rem 150px;
+}
+
+#linken_wpl2 button {
+  width: 300px;
+  height: 50px;
+  background: #5C9D8B;
+  border: #5C9D8B solid 1px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+#linken_wpl2 button a:link {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #EBFDF8;
+  text-decoration: none;
+}
+
+#linken_wpl2 button a:visited {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #EBFDF8;
+  text-decoration: none;
+}
+
+#wpl2 .boxes {
+  display: flex;
+  width: 1280px;
+}
+
+#wpl2 .flip-box {
+  background-color: transparent;
+  width: 225px;
+  height: 750px;
+  perspective: 1000px;
+  margin: 25px 25px 25px 0;
+}
+
+#wpl2 .flip-box img {
+  width: 195px;
+  height: 709px;
+}
+
+#wpl2 .flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#wpl2 .flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+#wpl2 .flip-box-wpl-front, #wpl2 .flip-box-wpl-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+#wpl2 .flip-box-wpl-front {
+  margin: 0 auto;
+}
+
+#wpl2 .flip-box-wpl-back {
+  transform: rotateY(180deg);
+  margin: 0 auto;
+}
+
+#gs h1 {
+  margin: 2rem 0 0 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+#knoppen-gs {
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin: 25px auto;
+}
+
+#knoppen-gs button {
+  padding: 15px;
+  margin: 0 2rem 2rem 0;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.code-button {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+#code-p {
+  margin: 2rem 0 0 2rem;
+}
+
+#title-code {
+  margin: 2rem 0 0 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
